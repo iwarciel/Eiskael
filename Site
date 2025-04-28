@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cardápio Demo</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+    .category {
+      margin-top: 30px;
+    }
+    .category h2 {
+      background-color: #444;
+      color: #fff;
+      padding: 10px;
+      text-transform: uppercase;
+    }
+    .menu-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 15px;
+      background-color: #fff;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .menu-item img {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+    .menu-item .details {
+      flex-grow: 1;
+      margin-left: 15px;
+    }
+    .menu-item .details h3 {
+      margin: 0;
+      font-size: 18px;
+    }
+    .menu-item .details p {
+      margin: 5px 0;
+      color: #555;
+    }
+    .menu-item .price {
+      font-weight: bold;
+      font-size: 18px;
+      color: #333;
+    }
+    .whatsapp-btn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25D366;
+      color: #fff;
+      padding: 15px 20px;
+      border-radius: 50%;
+      font-size: 24px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      cursor: pointer;
+    }
+    .whatsapp-btn:hover {
+      background-color: #128C7E;
+    }
+    @media screen and (max-width: 768px) {
+      .menu-item {
+        flex-direction: column;
+        align-items: center;
+      }
+      .menu-item img {
+        width: 80px;
+        height: 80px;
+      }
+      .whatsapp-btn {
+        bottom: 10px;
+        right: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Cardápio Demo</h1>
+  </header>
+
+  <div class="container">
+    <!-- Categoria 1: Esfihas -->
+    <div class="category">
+      <h2>Esfihas</h2>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Esfiha de Carne">
+        <div class="details">
+          <h3>Esfiha de Carne</h3>
+          <p>Deliciosa esfiha de carne moída com tempero especial.</p>
+          <span class="price">R$ 10,00</span>
+        </div>
+        <a href="https://wa.me/55XXXXXXXXXXX?text=Quero%20pedir%20a%20Esfiha%20de%20Carne" target="_blank">Pedido</a>
+      </div>
+
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Esfiha de Frango">
+        <div class="details">
+          <h3>Esfiha de Frango</h3>
+          <p>Esfiha recheada com frango desfiado e temperos.</p>
+          <span class="price">R$ 12,00</span>
+        </div>
+        <a href="https://wa.me/55XXXXXXXXXXX?text=Quero%20pedir%20a%20Esfiha%20de%20Frango" target="_blank">Pedido</a>
+      </div>
+    </div>
+
+    <!-- Categoria 2: Bebidas -->
+    <div class="category">
+      <h2>Bebidas</h2>
+      <div class="menu-item">
+        <img src="https://via.placeholder.com/100" alt="Refrigerante">
+        <div class="details">
+          <h3>Refrigerante</h3>
+          <p>Refrigerante gelado para acompanhar seu pedido.</p>
+          <span class="price">R$ 5,00</span>
+        </div>
+        <a href="https://wa.me/55XXXXXXXXXXX?text=Quero%20pedir%20um%20Refrigerante" target="_blank">Pedido</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="whatsapp-btn">
+    <a href="https://wa.me/55XXXXXXXXXXX" target="_blank">📲</a>
+  </div>
+
+</body>
+</html>
